@@ -21,8 +21,8 @@ const parseInput = (rawInput: string) => {
 
 const part1 = (rawInput: string) => {
   const input = parseInput(rawInput);
-  const lines = input.map((line, i) => {
-    return parseInt(line[0].toString() + line[line.length - 1].toString());
+  const lines = input.map((line) => {
+    return parseInt(line[0].toString() + line.get(-1).toString());
   });
 
   return lines.reduce((acc, line) => {
@@ -42,7 +42,7 @@ const part2 = (rawInput: string) => {
       const lineNumbers: number[] = matches.map((match) => {
         return parseInt(match in numbers ? numbers[match as keyof typeof numbers] : match);
       });
-      const sum = lineNumbers[0] * 10 + lineNumbers[lineNumbers.length - 1];
+      const sum = lineNumbers[0] * 10 + lineNumbers.get(-1);
       result += sum;
     }
   }

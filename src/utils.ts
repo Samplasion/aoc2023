@@ -1,4 +1,4 @@
-// Add your utilities here
+import "./extensions.ts";
 
 export function matchOverlapping(string: string, regex: RegExp): string[] {
   const res: string[] = [];
@@ -9,7 +9,6 @@ export function matchOverlapping(string: string, regex: RegExp): string[] {
   }
   return res;
 }
-
 
 export function getPerimeterComplex<T>(grid: T[][], x: number, y: number, width: number, height: number): Perimeter<T> {
   const perimeter = {

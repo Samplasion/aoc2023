@@ -4,13 +4,13 @@
     {
       "part1": {
         "solved": true,
-        "time": 1.937923000000012,
+        "time": 2.228929999999991,
         "attempts": [],
         "result": 57346
       },
       "part2": {
         "solved": true,
-        "time": 4.935322999999983,
+        "time": 2.2768270000000257,
         "attempts": [
           "57325"
         ],
